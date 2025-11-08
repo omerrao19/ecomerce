@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories | Omer's Store</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Font Awesome 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        /* Header Section */
+        .categories-header {
+            background: linear-gradient(135deg, #17a2b8, #0dcaf0);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        /* Category Cards */
+        .category-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .category-icon {
+            font-size: 3rem;
+            color: #17a2b8;
+            margin-bottom: 15px;
+        }
+
+        .category-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .btn-cart {
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <i class="fa fa-shopping-bag"></i> Omer's Store
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarrao"
+                aria-controls="navbarrao" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarrao">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-link"><i class="fa fa-home"></i> HOME</li>
+                    <li class="nav-link"><i class="fa fa-info-circle"></i> About</li>
+                    <li class="nav-link"><i class="fa fa-cubes"></i> Products</li>
+                    <li class="nav-link active"><i class="fa fa-tags"></i> Categories</li>
+                    <li class="nav-link"><i class="fa fa-phone"></i> Contact</li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-user"></i> My Account
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="fa fa-sign-in"></i> Login</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa fa-user-plus"></i> Register</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-warning position-relative mt-1 btn-cart">
+                    <i class="fa fa-shopping-cart"></i> Cart
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        99+
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="categories-header">
+        <h1>Shop by Category</h1>
+        <p>Find products you love from our top categories</p>
+    </section>
+
+    <!-- Categories Section -->
+    <div class="container my-5">
+        <div class="row g-4">
+            <!-- Category 1 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card category-card text-center p-3">
+                    <i class="fa fa-mobile category-icon"></i>
+                    <h5 class="card-title">Electronics</h5>
+                    <p class="text-muted">Phones, gadgets, and accessories</p>
+                    <a href="#" class="btn btn-outline-info btn-sm">
+                        <i class="fa fa-eye"></i> View Products
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category 2 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card category-card text-center p-3">
+                    <i class="fa fa-female category-icon"></i>
+                    <h5 class="card-title">Fashion</h5>
+                    <p class="text-muted">Clothing, shoes, and accessories</p>
+                    <a href="#" class="btn btn-outline-info btn-sm">
+                        <i class="fa fa-eye"></i> View Products
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category 3 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card category-card text-center p-3">
+                    <i class="fa fa-cutlery category-icon"></i>
+                    <h5 class="card-title">Home & Kitchen</h5>
+                    <p class="text-muted">Appliances and utensils</p>
+                    <a href="#" class="btn btn-outline-info btn-sm">
+                        <i class="fa fa-eye"></i> View Products
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category 4 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card category-card text-center p-3">
+                    <i class="fa fa-child category-icon"></i>
+                    <h5 class="card-title">Kids</h5>
+                    <p class="text-muted">Toys, clothing, and more</p>
+                    <a href="#" class="btn btn-outline-info btn-sm">
+                        <i class="fa fa-eye"></i> View Products
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category 5 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card category-card text-center p-3">
+                    <i class="fa fa-laptop category-icon"></i>
+                    <h5 class="card-title">Computers</h5>
+                    <p class="text-muted">Laptops, PCs, and accessories</p>
+                    <a href="#" class="btn btn-outline-info btn-sm">
+                        <i class="fa fa-eye"></i> View Products
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category 6 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card category-card text-center p-3">
+                    <i class="fa fa-heartbeat category-icon"></i>
+                    <h5 class="card-title">Health & Beauty</h5>
+                    <p class="text-muted">Makeup, wellness, and care</p>
+                    <a href="#" class="btn btn-outline-info btn-sm">
+                        <i class="fa fa-eye"></i> View Products
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category 7 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card category-card text-center p-3">
+                    <i class="fa fa-car category-icon"></i>
+                    <h5 class="card-title">Automotive</h5>
+                    <p class="text-muted">Car parts and accessories</p>
+                    <a href="#" class="btn btn-outline-info btn-sm">
+                        <i class="fa fa-eye"></i> View Products
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category 8 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card category-card text-center p-3">
+                    <i class="fa fa-paw category-icon"></i>
+                    <h5 class="card-title">Pets</h5>
+                    <p class="text-muted">Food, toys, and care products</p>
+                    <a href="#" class="btn btn-outline-info btn-sm">
+                        <i class="fa fa-eye"></i> View Products
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-info text-white text-center py-3 mt-5">
+        © 2025 Omer's Store. All Rights Reserved.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

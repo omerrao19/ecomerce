@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Omer's Store</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Font Awesome 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .products-header {
+            background: linear-gradient(135deg, #17a2b8, #0dcaf0);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .product-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .btn-cart {
+            border-radius: 8px;
+        }
+
+        .price {
+            color: #17a2b8;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <i class="fa fa-shopping-bag"></i> Omer's Store
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarrao"
+                aria-controls="navbarrao" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarrao">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-link"><i class="fa fa-home"></i> HOME</li>
+                    <li class="nav-link"><i class="fa fa-info-circle"></i> About</li>
+                    <li class="nav-link active"><i class="fa fa-cubes"></i> Products</li>
+                    <li class="nav-link"><i class="fa fa-phone"></i> Contact</li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-user"></i> My Account
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="fa fa-sign-in"></i> Login</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa fa-user-plus"></i> Register</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-warning position-relative mt-1 btn-cart">
+                    <i class="fa fa-shopping-cart"></i> Cart
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        99+
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="products-header">
+        <h1>Our Products</h1>
+        <p>Explore the best deals and trending items at Omer's Store</p>
+    </section>
+
+    <!-- Products Section -->
+    <div class="container my-5">
+        <div class="row g-4">
+            <!-- Product 1 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300x220?text=Product+1" class="product-img" alt="Product 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Wireless Headphones</h5>
+                        <p class="price">$49.99</p>
+                        <button class="btn btn-info text-white btn-cart">
+                            <i class="fa fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300x220?text=Product+2" class="product-img" alt="Product 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Smart Watch</h5>
+                        <p class="price">$79.99</p>
+                        <button class="btn btn-info text-white btn-cart">
+                            <i class="fa fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300x220?text=Product+3" class="product-img" alt="Product 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Bluetooth Speaker</h5>
+                        <p class="price">$29.99</p>
+                        <button class="btn btn-info text-white btn-cart">
+                            <i class="fa fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300x220?text=Product+4" class="product-img" alt="Product 4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Gaming Mouse</h5>
+                        <p class="price">$24.99</p>
+                        <button class="btn btn-info text-white btn-cart">
+                            <i class="fa fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load More -->
+        <div class="text-center mt-5">
+            <button class="btn btn-outline-info px-4 py-2">
+                <i class="fa fa-refresh"></i> Load More Products
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-info text-white text-center py-3 mt-5">
+        © 2025 Omer's Store. All Rights Reserved.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
